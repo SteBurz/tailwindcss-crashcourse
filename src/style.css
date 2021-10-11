@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'nunito-bold';
+    src: url('font/Nunito-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'nunito-regular';
+    src: url('font/Nunito-Regular.ttf');
+}
+
+h1 {
+    @apply text-7xl mb-12 font-nunito-bold;
+}
+
+h2 {
+    @apply text-5xl mb-8 font-nunito-bold;
+}
+
+p {
+    @apply text-secondary text-2xl;
+}
+
+input, textarea {
+    @apply p-2 py-4 bg-formBackground border-b-4 border-formFieldBorder w-full rounded;
+}
+
+.link {
+    @apply py-4 ml-8 font-nunito-bold hover:underline laptop:py-4;
+}
+
+.button {
+    @apply bg-pink-500 cursor-pointer rounded py-4 px-8 text-white hover:bg-pink-800 laptop:px-4 laptop:py-2;
+}
+
+.wrapper {
+    @apply container mx-auto py-24 tablet:py-32 laptop:py-60;
+}

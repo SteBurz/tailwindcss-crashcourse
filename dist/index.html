@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-primary p-4">
+        <nav class="container mx-auto flex flex-row justify-between items-center text-white">
+            <div class="text-4xl">SteffOverflow</div>
+            <div class="hidden laptop:block">
+                <a class="link" href="">Portfolio</a>
+                <a class="link" href="">About</a>
+                <a class="link" href="">Contact me</a>
+            </div>
+            <div class="fixed bottom-4 bg-formButtonBackground right-4 rounded-full px-4 py-6 z-50 laptop:hidden" id="hamburger">
+                <span>Menu</span>
+            </div>
+            <div class="fixed flex flex-col py-4 justify-center text-2xl items-center inset-0 bg-primary hidden js-toggle">
+                <a class="link" href="">Portfolio</a>
+                <a class="link" href="">About</a>
+                <a class="link" href="">Contact me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+            <div class="container mx-auto flex flex-row justify-between items-center py-32 laptop:bg-hero-pattern laptop:bg-cover laptop:bg-no-repeat laptop:bg-center">
+                <div class="flex flex-col">
+                    <h1>
+                        I build awesome experiences.
+                    </h1>
+                    <p class="mb-10">
+                        I’m a webdeveloper | UI & UX designer
+                    </p>
+                    <a class="button w-max">
+                        Check out my work!
+                    </a>
+                </div>
+                <div class="hidden tablet:block">
+                    <img src="images/header-illustration.svg"/>
+                </div>
+            </div>
+            <div class="wrapper bg-portfolio-pattern bg-cover bg-no-repeat bg-center">
+                <h2>Portfolio</h2>
+                <p class="hidden laptop:block">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    At vero eos et accusam et justo duo dolores et ea rebum. 
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    At vero eos et accusam et justo duo dolores et ea rebum. 
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <p class="mb-8 laptop:hidden">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                </p>
+                <div class="grid grid-cols-2 gap-4 laptop:m-12">
+                    <div class="col-span-2 mb-4 bg-portfolio-work-background bg-no-repeat bg-center py-8 laptop:mb-0 laptop:col-span-1">
+                        <img class="w-495 h-285 rounded mx-auto" src="images/portfolio-1.png" alt=""/>
+                    </div>
+                    <div class="col-span-2 bg-portfolio-work-background bg-no-repeat bg-center py-8 laptop:col-span-1">
+                        <img class="w-495 h-285 rounded mx-auto"  src="images/portfolio-1.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper laptop:bg-about-pattern laptop:bg-cover laptop:bg-no-repeat laptop:bg-center">
+                <h2 class="mb-12">About</h2>
+                <div class="flex flex-col laptop:flex-row laptop:items-center">
+                    <div class="flex-1 mb-8 bg-portfolio-work-background bg-no-repeat bg-left laptop:bg-center py-8 laptop:mb-0 laptop:mr-8 desktop:mr-0">
+                        <img class="w-495 h-285 rounded ml-3 laptop:mx-auto"  src="images/portfolio-1.png" alt=""/>
+                    </div>
+                    <p class="flex-1">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        At vero eos et accusam et justo duo dolores et ea rebum. 
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        At vero eos et accusam et justo duo dolores et ea rebum. 
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper laptop:bg-form-pattern laptop:bg-cover laptop:bg-no-repeat laptop:bg-center">
+                <h2>Contact Me</h2>
+                <p class="hidden laptop:block">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        At vero eos et accusam et justo duo dolores et ea rebum. 
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        At vero eos et accusam et justo duo dolores et ea rebum. 
+                        Stet clita kasd gubergren, no sea takimata sanctus est
+                </p>
+                <p class="mb-8 laptop:hidden">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                </p>
+                <form method="POST" class="grid grid-cols-2 gap-8 mt-8 laptop:mt-32">
+                    <label for="email" class="col-span-2 laptop:col-span-1">
+                        Your Email:
+                        <input name="email" value="">
+                    </label>
+                    <label for="honeypot" class="hidden laptop:col-span-1">
+                        <input type="hidden" name="honeypot" value="">
+                    </label>
+                    <label for="firstname" class="col-span-2 laptop:col-span-1" >
+                        Your Firstname:
+                        <input name="firstname" value="">
+                    </label>
+                    <label for="lastname" class="col-span-2 laptop:col-span-1" >
+                        Your Lastname:
+                        <input name="lastname" value="">
+                    </label>
+                    <label for="message" class="col-span-2">
+                        Your Message:
+                        <textarea name="message">
+
+                        </textarea>
+                    </label>
+                    <button type="submit" class="col-span-2 button p-12">
+                        Contact me
+                    </button>
+                </form>
+            </div>
+    </main>
+</body>
+</html>
